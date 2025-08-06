@@ -1,38 +1,294 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kababi Restaurant</title>
-</head>
-<body>
-    <!-- =================== NAVBAR =================== -->
-     <nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kababi Restaurant</title>
+	</head>
+	<body>
+		<!-- =================== NAVBAR =================== -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar__logo">
+					<img src="./assets/images/logo/logo.png" alt="Kababi Logo" />
+				</div>
 
-     </nav>
-    <!-- =================== HEADER =================== -->
-     <header>
+				<ul class="navbar__menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Page</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 
-     </header>
-    <!-- =================== CHOOSE YOUR BEST CATEGORY =================== -->
-     <section></section>
-    <!-- =================== WHY CHOOSE US =================== -->
-          <section></section>
+				<div class="navbar__cta">
+					<a href="#" class="btn">Book a Table</a>
+				</div>
+			</div>
+		</nav>
 
-    <!-- =================== TRY OUR SPECIAL OFFER =================== -->
-          <section></section>
+		<!-- =================== HEADER =================== -->
+		<header class="hero">
+			<div class="container hero__content">
+				<div class="hero__text">
+					<span class="hero__subtitle">Delicious & Tasty</span>
+					<h1 class="hero__title">
+						BEST <br />
+						QUALITY <br />
+						FOODS
+					</h1>
+					<a href="#" class="btn btn--light">Explore Dishes</a>
+				</div>
 
-    <!-- =================== RESTAURANT PHOTO GALLERY =================== -->
-          <section></section>
+				<div class="hero__image">
+					<img
+						src="./assets/images/slider/img_bg_slider_home01.jpg"
+						alt="Delicious eggs dish"
+					/>
+					<button class="hero__play">
+						<i class="fa-solid fa-play"></i>
+					</button>
+				</div>
+			</div>
+		</header>
 
-    <!-- =================== MEET PROFESSIONAL CHEFS =================== -->
-          <section></section>
+		<!-- =================== CHOOSE YOUR BEST CATEGORY =================== -->
+		<section class="category">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">CHOOSE YOUR BEST CATEGORY</h2>
+					<p class="section-subtitle">Best foods for you & family</p>
+				</div>
 
-    <!-- =================== LATEST NEWS & BLOG =================== -->
-          <section></section>
+				<div class="category__grid">
+					<div class="category__item active">
+						<img src="./assets/images/icon-burger.png" alt="Cheeseburger" />
+						<span>Cheeseburger</span>
+					</div>
+					<div class="category__item">
+						<img src="./assets/images/icon-pizza.png" alt="Pizza Slice" />
+						<span>Pizza Slice</span>
+					</div>
+					<div class="category__item">
+						<img src="./assets/images/icon-coffee.png" alt="Coffee Cup" />
+						<span>Coffee Cup</span>
+					</div>
+					<div class="category__item">
+						<img src="./assets/images/icon-chicken.png" alt="Chicken Leg" />
+						<span>Chicken Leg</span>
+					</div>
+					<div class="category__item">
+						<img src="./assets/images/icon-lemon.png" alt="Lemon Drink" />
+						<span>Lemon Drink</span>
+					</div>
+					<div class="category__item">
+						<img src="./assets/images/icon-shrimp.png" alt="Shrimp" />
+						<span>Shrimp</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- =================== FOOTER =================== -->
-     <footer></footer>
+		<!-- =================== WHY CHOOSE US =================== -->
+		<section class="about">
+			<div class="banner_about">
+				<img src="./assets/images/gallery/imgfood1.png" alt="" />
+				<img src="./assets/images/gallery/imgfood2.png" alt="" />
+				<img src="./assets/images/gallery/imgfood3.png" alt="" />
+			</div>
+			<div class="container about__wrapper">
+				<img src="./assets/images/about-us/iconbgabout.png" alt="" />
+				<div class="about__image">
+					<img
+						src="./assets/images/about-us/img_aboutus_home1.jpg"
+						alt="Chef holding dish"
+					/>
+				</div>
+				<div class="about__content">
+					<h2 class="section-title">WHY CHOOSE US</h2>
+					<p>
+						Set in a sophisticated, smoke-free location, Kababi delivers
+						unforgettable culinary experiences with a wide variety of premium
+						dishes, made from fresh, local ingredients.
+					</p>
+					<a href="#" class="btn">Read More</a>
+				</div>
+			</div>
+		</section>
 
-</body>
+		<!-- =================== TRY OUR SPECIAL OFFER =================== -->
+		<section class="menu">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">TRY OUR SPECIAL OFFER</h2>
+					<p class="section-subtitle">Best foods for you & family</p>
+				</div>
+				<div class="menu__list">
+					<div class="menu__item">
+						<h3>Raw Scallops from Erquy</h3>
+						<span class="price">$89</span>
+					</div>
+					<div class="menu__item">
+						<h3>Grilled King Crab</h3>
+						<span class="price">$89</span>
+					</div>
+					<div class="menu__item">
+						<h3>Coffee and Truffle Roast</h3>
+						<span class="price">$89</span>
+					</div>
+					<div class="menu__item">
+						<h3>Tender Octopus and Shrimp</h3>
+						<span class="price">$89</span>
+					</div>
+					<div class="menu__item">
+						<h3>Cod Fish Grilled and Oiled</h3>
+						<span class="price">$89</span>
+					</div>
+					<div class="menu__item">
+						<h3>French Duck Confit</h3>
+						<span class="price">$89</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =================== RESTAURANT PHOTO GALLERY =================== -->
+		<section class="gallery">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">RESTAURANT PHOTO GALLERY</h2>
+					<p class="section-subtitle">Nice looking & tasty</p>
+				</div>
+				<div class="gallery__grid">
+					<img
+						src="./assets/images/gallery/img1gallerybox.jpg"
+						alt="Family Package Dish"
+					/>
+					<img src="./assets/images/gallery/img2gallerybox.jpg" alt="Pizza" />
+					<img
+						src="./assets/images/gallery/img3gallerybox.jpg"
+						alt="Meat Dish"
+					/>
+					<img
+						src="./assets/images/gallery/img4gallerybox.jpg"
+						alt="Spaghetti"
+					/>
+					<img src="./assets/images/gallery/img5gallerybox.jpg" alt="Steak" />
+					<img src="./assets/images/gallery/img6gallerybox.jpg" alt="Burger" />
+				</div>
+			</div>
+		</section>
+
+		<!-- =================== MEET PROFESSIONAL CHEFS =================== -->
+		<section class="chefs">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">MEET PROFESSIONAL CHEFS</h2>
+					<p class="section-subtitle">Best foods for you & family</p>
+				</div>
+				<div class="chefs__grid">
+					<div class="chef-card">
+						<img src="./assets/images/team/img1team.jpg" alt="Chef 1" />
+						<h3>John Doe</h3>
+					</div>
+					<div class="chef-card">
+						<img src="./assets/images/team/img2team.jpg" alt="Chef 2" />
+						<h3>Anna Smith</h3>
+					</div>
+					<div class="chef-card">
+						<img src="./assets/images/team/img3team.jpg" alt="Chef 3" />
+						<h3>David Lee</h3>
+					</div>
+					<div class="chef-card">
+						<img src="./assets/images/team/img4team.jpg" alt="Chef 4" />
+						<h3>Sophie Kim</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =================== LATEST NEWS & BLOG =================== -->
+		<section class="blog">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">LATEST NEWS & BLOG</h2>
+					<p class="section-subtitle">Best foods for you & family</p>
+				</div>
+				<div class="blog__grid">
+					<div class="blog__post">
+						<img
+							src="./assets/images/blog/img1blohhome01.jpg"
+							alt="Blog post 1"
+						/>
+						<h3>How to Run an Audit for Major Platform</h3>
+						<p>By admin | 25.12.2022</p>
+						<a href="#" class="btn btn--small">Read More</a>
+					</div>
+					<div class="blog__post">
+						<img
+							src="./assets/images/blog/img2blohhome01.jpg"
+							alt="Blog post 2"
+						/>
+						<h3>Designing Web Code</h3>
+						<p>By admin | 25.12.2022</p>
+						<a href="#" class="btn btn--small">Read More</a>
+					</div>
+					<div class="blog__post">
+						<img
+							src="./assets/images/blog/img3blohhome01.jpg"
+							alt="Blog post 3"
+						/>
+						<h3>Enjoying Dinner with Friends</h3>
+						<p>By admin | 25.12.2022</p>
+						<a href="#" class="btn btn--small">Read More</a>
+					</div>
+				</div>
+				<div class="brand">
+					<img src="./assets/images/brand/imgbrand1.png" alt="" />
+					<img src="./assets/images/brand/imgbrand2.png" alt="" />
+
+					<img src="./assets/images/brand/imgbrand3.png" alt="" />
+
+					<img src="./assets/images/brand/imgbrand4.png" alt="" />
+
+					<img src="./assets/images/brand/imgbrand5.png" alt="" />
+					<img src="./assets/images/brand/imgbrand6.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<!-- =================== FOOTER =================== -->
+		<footer class="footer">
+			<div class="container footer__grid">
+				<div class="footer__brand">
+					<img src="./assets/images/logo/logo2.png" alt="Kababi logo" />
+					<p>© 2025 Kababi. Designed by BeCode.</p>
+				</div>
+
+				<div class="footer__links">
+					<h4>About</h4>
+					<ul>
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Facilities</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__newsletter">
+					<h4>Newsletters</h4>
+					<form>
+						<input type="email" placeholder="Enter your email" />
+						<button type="submit">
+							<i class="fa-solid fa-paper-plane"></i>
+						</button>
+					</form>
+				</div>
+
+				<div class="footer__contact">
+					<h4>Contact</h4>
+					<p>contact@kababi.com</p>
+					<p>+32 456 789 000</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
