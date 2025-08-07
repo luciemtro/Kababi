@@ -9,14 +9,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 80px;
-	}
-}
-.chefs_flex {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 20px;
-	img {
-		width: 200px;
+		.section-header {
+			text-align: center;
+		}
+		.chefs_flex {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			img {
+				width: 200px;
+			}
+		}
 	}
 }

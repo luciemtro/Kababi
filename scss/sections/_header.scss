@@ -9,7 +9,7 @@
 	align-items: end;
 	padding-left: 200px;
 
-	.fa-solid {
+	.fa-play {
 		position: absolute;
 		right: 230px;
 		font-size: 50px;
@@ -33,13 +33,16 @@
 			font-weight: 100;
 		}
 		.btn--light {
-			color: white;
 			border: rgba(255, 255, 255, 0.133) 2px solid;
 			border-radius: 5px;
 			padding: 20px 30px;
 			width: fit-content;
 			text-transform: uppercase;
 			font-size: 15px;
+			background-color: transparent;
+			* {
+				color: white;
+			}
 		}
 		.logo_header {
 			position: absolute;

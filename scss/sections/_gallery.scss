@@ -1,12 +1,17 @@
 .gallery {
-	min-height: 100vh;
+	min-height: 150vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.gallery_flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
+	.container {
+		.section-header {
+			text-align: center;
+		}
+		.gallery_flex {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+	}
 }

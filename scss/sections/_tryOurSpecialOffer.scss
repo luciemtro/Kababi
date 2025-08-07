@@ -9,22 +9,22 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		.section-header {
+			text-align: center;
+		}
+		.menu_list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+			.menu_item {
+				min-width: 500px;
+				display: flex;
+				background-color: white;
+				height: 80px;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
 	}
-}
-.section-header {
-	text-align: center;
-}
-.menu_list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 30px;
-}
-.menu_item {
-	min-width: 500px;
-	display: flex;
-	background-color: white;
-	height: 80px;
-	align-items: center;
-	justify-content: space-between;
 }

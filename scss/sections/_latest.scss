@@ -4,12 +4,30 @@
 	justify-content: center;
 	align-items: center;
 	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		.section-header {
+			text-align: center;
+		}
 		.blog_flex {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
 			gap: 20px;
+			.blog_post {
+				width: 300px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.brand {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 50px;
 		}
 	}
 }

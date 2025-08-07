@@ -12,26 +12,26 @@
 		display: flex;
 		flex-direction: column;
 		gap: 60px;
-	}
-}
-.category_flex {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	flex-wrap: wrap;
-}
-.category_item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+		.category_flex {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			flex-wrap: wrap;
+			.category_item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 
-	gap: 20px;
-	width: 120px;
-	height: 150px;
-	background-color: white;
-	i {
-		font-size: 40px;
-		color: rgb(175, 151, 95);
+				gap: 20px;
+				width: 120px;
+				height: 150px;
+				background-color: white;
+				i {
+					font-size: 40px;
+					color: rgb(175, 151, 95);
+				}
+			}
+		}
 	}
 }
