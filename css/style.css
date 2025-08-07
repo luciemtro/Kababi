@@ -104,7 +104,7 @@
   font-size: 15px;
   background-color: transparent;
 }
-.hero .hero_text .btn--light * {
+.hero .hero_text .btn--light a {
   color: white;
 }
 .hero .hero_text .logo_header {
@@ -452,7 +452,6 @@ body {
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  border: 1px red solid;
   margin: 0;
   padding: 0;
   font-family: "FontAwesome Light";
@@ -461,6 +460,10 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+button {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
