@@ -1,0 +1,49 @@
+.about {
+	min-height: 150vh;
+	position: relative;
+	padding-top: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imgfood {
+	position: absolute;
+}
+.imgfood1 {
+	left: 5%;
+	width: 15%;
+	top: 5%;
+}
+.imgfood3 {
+	right: 5%;
+	width: 20%;
+	top: 5%;
+}
+.imgfood2 {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	padding: 20px;
+	background-color: white;
+	width: 40%;
+	top: 0%;
+}
+.about_image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.about_text {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	gap: 20px;
+}
+.logo_why_choose {
+	position: absolute;
+	right: 100px;
+}
+.about_content {
+	text-align: center;
+}

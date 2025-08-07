@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<link rel="stylesheet" href="css/style.css" />
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kababi Restaurant</title>
 	</head>
 	<body>
+		<script
+			src="https://kit.fontawesome.com/2e43f7e761.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- =================== NAVBAR =================== -->
 		<nav class="navbar">
 			<div class="container">
-				<div class="navbar__logo">
+				<div class="navbar_logo">
 					<img src="./assets/images/logo/logo.png" alt="Kababi Logo" />
 				</div>
 
-				<ul class="navbar__menu">
+				<ul class="navbar_menu">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Page</a></li>
@@ -21,34 +27,28 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 
-				<div class="navbar__cta">
-					<a href="#" class="btn">Book a Table</a>
+				<div class="navbar_cta">
+					<a href="#" class="btn btn--gold">Book a Table</a>
 				</div>
 			</div>
 		</nav>
 
 		<!-- =================== HEADER =================== -->
 		<header class="hero">
-			<div class="container hero__content">
-				<div class="hero__text">
-					<span class="hero__subtitle">Delicious & Tasty</span>
-					<h1 class="hero__title">
-						BEST <br />
-						QUALITY <br />
-						FOODS
-					</h1>
-					<a href="#" class="btn btn--light">Explore Dishes</a>
-				</div>
+			<i class="fa-solid fa-play"></i>
 
-				<div class="hero__image">
-					<img
-						src="./assets/images/slider/img_bg_slider_home01.jpg"
-						alt="Delicious eggs dish"
-					/>
-					<button class="hero__play">
-						<i class="fa-solid fa-play"></i>
-					</button>
-				</div>
+			<div class="hero_text">
+				<h1 class="hero_title">
+					BEST <br />
+					QUALITY <br />
+					FOODS
+				</h1>
+				<img
+					class="logo_header"
+					src="./assets/images/slider/img_bg2.png"
+					alt=""
+				/>
+				<a href="#" class="btn btn--light">Explore Our Menu</a>
 			</div>
 		</header>
 
@@ -60,29 +60,29 @@
 					<p class="section-subtitle">Best foods for you & family</p>
 				</div>
 
-				<div class="category__grid">
-					<div class="category__item active">
-						<img src="./assets/images/icon-burger.png" alt="Cheeseburger" />
+				<div class="category_flex">
+					<div class="category_item active">
+						<i class="fa-solid fa-burger"></i>
 						<span>Cheeseburger</span>
 					</div>
-					<div class="category__item">
-						<img src="./assets/images/icon-pizza.png" alt="Pizza Slice" />
+					<div class="category_item">
+						<i class="fa-solid fa-pizza-slice"></i>
 						<span>Pizza Slice</span>
 					</div>
-					<div class="category__item">
-						<img src="./assets/images/icon-coffee.png" alt="Coffee Cup" />
+					<div class="category_item">
+						<i class="fa-solid fa-mug-hot"></i>
 						<span>Coffee Cup</span>
 					</div>
-					<div class="category__item">
-						<img src="./assets/images/icon-chicken.png" alt="Chicken Leg" />
+					<div class="category_item">
+						<i class="fa-solid fa-drumstick-bite"></i>
 						<span>Chicken Leg</span>
 					</div>
-					<div class="category__item">
-						<img src="./assets/images/icon-lemon.png" alt="Lemon Drink" />
+					<div class="category_item">
+						<i class="fa-solid fa-lemon"></i>
 						<span>Lemon Drink</span>
 					</div>
-					<div class="category__item">
-						<img src="./assets/images/icon-shrimp.png" alt="Shrimp" />
+					<div class="category_item">
+						<i class="fa-solid fa-shrimp"></i>
 						<span>Shrimp</span>
 					</div>
 				</div>
@@ -91,27 +91,48 @@
 
 		<!-- =================== WHY CHOOSE US =================== -->
 		<section class="about">
-			<div class="banner_about">
-				<img src="./assets/images/gallery/imgfood1.png" alt="" />
-				<img src="./assets/images/gallery/imgfood2.png" alt="" />
-				<img src="./assets/images/gallery/imgfood3.png" alt="" />
-			</div>
-			<div class="container about__wrapper">
-				<img src="./assets/images/about-us/iconbgabout.png" alt="" />
-				<div class="about__image">
+			<div class="container">
+				<img
+					class="imgfood1 imgfood"
+					src="./assets/images/gallery/imgfood1.png"
+					alt=""
+				/>
+				<img
+					class="imgfood2 imgfood"
+					src="./assets/images/gallery/imgfood2.jpg"
+					alt=""
+				/>
+				<img
+					class="imgfood3 imgfood"
+					src="./assets/images/gallery/imgfood3.png"
+					alt=""
+				/>
+
+				<div class="container about_wrapper">
+					<img
+						class="logo_why_choose"
+						src="./assets/images/about-us/iconbgabout.png"
+						alt=""
+					/>
+
+					<div class="about_content">
+						<h2 class="section-title">WHY CHOOSE US</h2>
+						<p>Best food for you and family</p>
+					</div>
+				</div>
+				<div class="about_image">
 					<img
 						src="./assets/images/about-us/img_aboutus_home1.jpg"
 						alt="Chef holding dish"
 					/>
-				</div>
-				<div class="about__content">
-					<h2 class="section-title">WHY CHOOSE US</h2>
-					<p>
-						Set in a sophisticated, smoke-free location, Kababi delivers
-						unforgettable culinary experiences with a wide variety of premium
-						dishes, made from fresh, local ingredients.
-					</p>
-					<a href="#" class="btn">Read More</a>
+					<div class="about_text">
+						<p>
+							Set in a sophisticated, smoke-free location, Kababi delivers
+							unforgettable culinary experiences with a wide variety of premium
+							dishes, made from fresh, local ingredients.
+						</p>
+						<a href="#" class="btn btn--gold">Read More</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -123,28 +144,28 @@
 					<h2 class="section-title">TRY OUR SPECIAL OFFER</h2>
 					<p class="section-subtitle">Best foods for you & family</p>
 				</div>
-				<div class="menu__list">
-					<div class="menu__item">
+				<div class="menu_list">
+					<div class="menu_item">
 						<h3>Raw Scallops from Erquy</h3>
 						<span class="price">$89</span>
 					</div>
-					<div class="menu__item">
+					<div class="menu_item">
 						<h3>Grilled King Crab</h3>
 						<span class="price">$89</span>
 					</div>
-					<div class="menu__item">
+					<div class="menu_item">
 						<h3>Coffee and Truffle Roast</h3>
 						<span class="price">$89</span>
 					</div>
-					<div class="menu__item">
+					<div class="menu_item">
 						<h3>Tender Octopus and Shrimp</h3>
 						<span class="price">$89</span>
 					</div>
-					<div class="menu__item">
+					<div class="menu_item">
 						<h3>Cod Fish Grilled and Oiled</h3>
 						<span class="price">$89</span>
 					</div>
-					<div class="menu__item">
+					<div class="menu_item">
 						<h3>French Duck Confit</h3>
 						<span class="price">$89</span>
 					</div>
@@ -159,7 +180,7 @@
 					<h2 class="section-title">RESTAURANT PHOTO GALLERY</h2>
 					<p class="section-subtitle">Nice looking & tasty</p>
 				</div>
-				<div class="gallery__grid">
+				<div class="gallery_flex">
 					<img
 						src="./assets/images/gallery/img1gallerybox.jpg"
 						alt="Family Package Dish"
@@ -186,22 +207,18 @@
 					<h2 class="section-title">MEET PROFESSIONAL CHEFS</h2>
 					<p class="section-subtitle">Best foods for you & family</p>
 				</div>
-				<div class="chefs__grid">
+				<div class="chefs_flex">
 					<div class="chef-card">
 						<img src="./assets/images/team/img1team.jpg" alt="Chef 1" />
-						<h3>John Doe</h3>
 					</div>
 					<div class="chef-card">
 						<img src="./assets/images/team/img2team.jpg" alt="Chef 2" />
-						<h3>Anna Smith</h3>
 					</div>
 					<div class="chef-card">
 						<img src="./assets/images/team/img3team.jpg" alt="Chef 3" />
-						<h3>David Lee</h3>
 					</div>
 					<div class="chef-card">
 						<img src="./assets/images/team/img4team.jpg" alt="Chef 4" />
-						<h3>Sophie Kim</h3>
 					</div>
 				</div>
 			</div>
@@ -214,8 +231,8 @@
 					<h2 class="section-title">LATEST NEWS & BLOG</h2>
 					<p class="section-subtitle">Best foods for you & family</p>
 				</div>
-				<div class="blog__grid">
-					<div class="blog__post">
+				<div class="blog_flex">
+					<div class="blog_post">
 						<img
 							src="./assets/images/blog/img1blohhome01.jpg"
 							alt="Blog post 1"
@@ -224,7 +241,7 @@
 						<p>By admin | 25.12.2022</p>
 						<a href="#" class="btn btn--small">Read More</a>
 					</div>
-					<div class="blog__post">
+					<div class="blog_post">
 						<img
 							src="./assets/images/blog/img2blohhome01.jpg"
 							alt="Blog post 2"
@@ -233,7 +250,7 @@
 						<p>By admin | 25.12.2022</p>
 						<a href="#" class="btn btn--small">Read More</a>
 					</div>
-					<div class="blog__post">
+					<div class="blog_post">
 						<img
 							src="./assets/images/blog/img3blohhome01.jpg"
 							alt="Blog post 3"

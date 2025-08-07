@@ -1,1 +1,27 @@
 @use 'fonts/fonts';
+@use 'layout/navbar';
+@use 'sections/header';
+@use 'sections/chooseCategory';
+@use 'sections/whyChoose';
+@use 'sections/tryOurSpecialOffer';
+@use 'sections/meetProfessionalChef';
+@use 'sections/gallery';
+@use 'layout/footer';
+@use 'sections/latest';
+
+body {
+	width: 100%;
+}
+* {
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: 1px red solid;
+	margin: 0;
+	padding: 0;
+	font-family: 'FontAwesome Light';
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}

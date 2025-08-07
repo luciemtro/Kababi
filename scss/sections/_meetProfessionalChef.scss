@@ -1,0 +1,22 @@
+.chefs {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../../assets/images/our-chefs/imgbg-ourchefs.jpg');
+	background-size: cover;
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+}
+.chefs_flex {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	img {
+		width: 200px;
+	}
+}
