@@ -397,6 +397,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #faf6f0;
+  padding: 80px 30px;
 }
 .menu .container {
   display: flex;
@@ -789,13 +791,95 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  /* ---- STYLE UNIQUEMENT DES CARDS ---- */
 }
 .blog .container .blog_flex .blog_post {
-  width: 300px;
+  width: 300px; /* largeur desktop */
+  background-color: #faf6f0;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  /* padding uniquement sur le contenu */
+  /* meta */
+  /* titre */
+  /* bouton (scopé) */
+  /* hover card */
 }
 .blog .container .blog_flex .blog_post img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.blog .container .blog_flex .blog_post p,
+.blog .container .blog_flex .blog_post h3,
+.blog .container .blog_flex .blog_post .btn.btn--small {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.blog .container .blog_flex .blog_post p {
+  margin: 18px 0 6px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: #8f8a84;
+}
+.blog .container .blog_flex .blog_post p i {
+  color: #c8a96a;
+  margin-right: 6px;
+}
+.blog .container .blog_flex .blog_post p span {
+  color: #c8a96a;
+}
+.blog .container .blog_flex .blog_post h3 {
+  margin: 0 0 18px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+.blog .container .blog_flex .blog_post .btn.btn--small {
+  margin: 10px 0 40px 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 14px 22px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.blog .container .blog_flex .blog_post .btn.btn--small:hover {
+  color: white;
+}
+.blog .container .blog_flex .blog_post .btn.btn--small a {
+  color: black;
+  text-decoration: none;
+}
+.blog .container .blog_flex .blog_post .btn.btn--small i {
+  font-size: 12px;
+}
+.blog .container .blog_flex .blog_post .btn.btn--small:hover {
+  background-color: #c8a96a;
+  color: white;
+  transform: translateY(-2px);
+}
+.blog .container .blog_flex .blog_post .btn.btn--small:hover a {
+  color: white;
+}
+.blog .container .blog_flex .blog_post:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+.blog .container .blog_flex .blog_post:hover img {
+  transform: scale(1.03);
 }
 .blog .container .brand {
   display: flex;
@@ -809,7 +893,58 @@
   .blog {
     padding: 80px 30px;
   }
+  .blog .container .blog_flex .blog_post {
+    width: 320px;
+  }
+  .blog .container .blog_flex .blog_post img {
+    height: 200px;
+  }
 }
+/* Mobile */
+@media (max-width: 768px) {
+  .blog .container .blog_flex .blog_post {
+    width: 100%;
+    max-width: 420px;
+  }
+  .blog .container .blog_flex .blog_post img {
+    height: 220px;
+  }
+}
+.brand-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.brand-track {
+  display: flex; /* sera remplacé par A + B (flex aussi) */
+  gap: 80px;
+  align-items: center;
+  will-change: transform;
+}
+
+.brand-track img {
+  height: 100px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.brand-track img:hover {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+/* groupes (injectés par JS) */
+.brand-group {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
 :root {
   --font-title: "Playfair Display", serif;
   --font-ui: "Poppins", Arial, Helvetica, sans-serif;
