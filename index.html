@@ -1,404 +1,432 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<link rel="stylesheet" href="css/style.css" />
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kababi Restaurant</title>
-	</head>
-	<body>
-		<script
-			src="https://kit.fontawesome.com/2e43f7e761.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- =================== NAVBAR =================== -->
-		<nav class="navbar">
-			<div class="container">
-				<div class="navbar_logo">
-					<img src="./assets/images/logo/logo.png" alt="Kababi Logo" />
-				</div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kababi Restaurant</title>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/2e43f7e761.js"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar_logo">
+          <img src="./assets/images/logo/logo.png" alt="Kababi Logo" />
+        </div>
 
-				<ul class="navbar_menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Page</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+        <ul class="navbar_menu">
+          <li>
+            <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">About <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+          <li><a href="#">Contact</a></li>
 
-				<button class="btn btn--gold">
-					<a href="#">Book a Table</a>
-					<i class="fa-solid fa-arrow-right"></i>
-				</button>
-			</div>
-		</nav>
+          <!-- CTA DANS LE MENU (visible mobile) -->
+          <li class="navbar_cta">
+            <button class="btn btn--gold">
+              <a href="#">Book a Table</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </li>
+        </ul>
 
-		<!-- =================== HEADER =================== -->
-		<header class="hero">
-			<i class="fa-solid fa-play"></i>
+        <!-- CTA à droite (visible desktop) -->
+        <button class="btn btn--gold navbar_btn-desktop">
+          <a href="#">Book a Table</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
 
-			<div class="hero_text">
-				<h1 class="hero_title">
-					BEST <br />
-					QUALITY <br />
-					FOODS
-				</h1>
-				<img
-					class="logo_header"
-					src="./assets/images/slider/img_bg2.png"
-					alt=""
-				/>
-				<button class="btn btn--light">
-					<a href="#">Explore Our Menu</a>
-					<i class="fa-solid fa-arrow-right"></i>
-				</button>
-			</div>
-		</header>
+        <!-- Hamburger -->
+        <button class="navbar_toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
 
-		<!-- =================== CHOOSE YOUR BEST CATEGORY =================== -->
-		<section class="category">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">CHOOSE YOUR BEST CATEGORY</h2>
-					<p class="section-subtitle">Best foods for you & family</p>
-				</div>
+    <!-- =================== HEADER =================== -->
+    <header class="hero">
+      <i class="fa-solid fa-play"></i>
 
-				<div class="category_flex">
-					<div class="category_item active">
-						<i class="fa-solid fa-burger"></i>
-						<span>Cheeseburger</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-					<div class="category_item">
-						<i class="fa-solid fa-pizza-slice"></i>
-						<span>Pizza Slice</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-					<div class="category_item">
-						<i class="fa-solid fa-mug-hot"></i>
-						<span>Coffee Cup</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-					<div class="category_item">
-						<i class="fa-solid fa-drumstick-bite"></i>
-						<span>Chicken Leg</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-					<div class="category_item">
-						<i class="fa-solid fa-lemon"></i>
-						<span>Lemon Drink</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-					<div class="category_item">
-						<i class="fa-solid fa-shrimp"></i>
-						<span>Shrimp</span>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
-				</div>
-			</div>
-		</section>
+      <div class="hero_text">
+        <h1 class="hero_title">
+          BEST <br />
+          QUALITY <br />
+          FOODS
+        </h1>
+        <img
+          class="logo_header"
+          src="./assets/images/slider/img_bg2.png"
+          alt=""
+        />
+        <button class="btn btn--light">
+          <a href="#">Explore Our Menu</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
 
-		<!-- =================== WHY CHOOSE US =================== -->
-		<section class="about">
-			<div class="container">
-				<img
-					class="imgfood1 imgfood"
-					src="./assets/images/gallery/imgfood1.png"
-					alt=""
-				/>
-				<img
-					class="imgfood2 imgfood"
-					src="./assets/images/gallery/imgfood2.jpg"
-					alt=""
-				/>
-				<img
-					class="imgfood3 imgfood"
-					src="./assets/images/gallery/imgfood3.png"
-					alt=""
-				/>
+    <!-- =================== CHOOSE YOUR BEST CATEGORY =================== -->
+    <section class="category">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">CHOOSE YOUR BEST CATEGORY</h2>
+          <p class="section-subtitle">Best foods for you & family</p>
+        </div>
 
-				<div class="container about_wrapper">
-					<img
-						class="logo_why_choose"
-						src="./assets/images/about-us/iconbgabout.png"
-						alt=""
-					/>
+        <div class="category_flex">
+          <div class="category_item active">
+            <i class="fa-solid fa-burger"></i>
+            <span>Cheeseburger</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="category_item">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <span>Pizza Slice</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="category_item">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Coffee Cup</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="category_item">
+            <i class="fa-solid fa-drumstick-bite"></i>
+            <span>Chicken Leg</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="category_item">
+            <i class="fa-solid fa-lemon"></i>
+            <span>Lemon Drink</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="category_item">
+            <i class="fa-solid fa-shrimp"></i>
+            <span>Shrimp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div class="about_content">
-						<h2 class="section-title">WHY CHOOSE US</h2>
-						<p>Best food for you and family</p>
-					</div>
-				</div>
-				<div class="about_image">
-					<img
-						src="./assets/images/about-us/img_aboutus_home1.jpg"
-						alt="Chef holding dish"
-					/>
-					<div class="about_text">
-						<p>
-							Set in a sophisticated, smoke-free location, Kababi delivers
-							unforgettable culinary experiences with a wide variety of premium
-							dishes, made from fresh, local ingredients.
-						</p>
-						<button class="btn btn--gold">
-							<a href="#">Discover More</a>
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- =================== WHY CHOOSE US =================== -->
+    <section class="about">
+      <div class="container">
+        <img
+          class="imgfood1 imgfood"
+          src="./assets/images/gallery/imgfood1.png"
+          alt=""
+        />
+        <img
+          class="imgfood2 imgfood"
+          src="./assets/images/gallery/imgfood2.jpg"
+          alt=""
+        />
+        <img
+          class="imgfood3 imgfood"
+          src="./assets/images/gallery/imgfood3.png"
+          alt=""
+        />
 
-		<!-- =================== TRY OUR SPECIAL OFFER =================== -->
-		<section class="menu">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">TRY OUR SPECIAL OFFER</h2>
-					<p class="section-subtitle">Best foods for you & family</p>
-				</div>
-				<div class="menu_list">
-					<div class="menu_item">
-						<h3>Raw Scallops from Erquy</h3>
-						<span class="price">$89</span>
-					</div>
-					<div class="menu_item">
-						<h3>Grilled King Crab</h3>
-						<span class="price">$89</span>
-					</div>
-					<div class="menu_item">
-						<h3>Coffee and Truffle Roast</h3>
-						<span class="price">$89</span>
-					</div>
-					<div class="menu_item">
-						<h3>Tender Octopus and Shrimp</h3>
-						<span class="price">$89</span>
-					</div>
-					<div class="menu_item">
-						<h3>Cod Fish Grilled and Oiled</h3>
-						<span class="price">$89</span>
-					</div>
-					<div class="menu_item">
-						<h3>French Duck Confit</h3>
-						<span class="price">$89</span>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="container about_wrapper">
+          <img
+            class="logo_why_choose"
+            src="./assets/images/about-us/iconbgabout.png"
+            alt=""
+          />
 
-		<!-- =================== RESTAURANT PHOTO GALLERY =================== -->
-		<section class="gallery">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">RESTAURANT PHOTO GALLERY</h2>
-					<p class="section-subtitle">Nice looking & tasty</p>
-				</div>
-				<div class="gallery_flex">
-					<img
-						src="./assets/images/gallery/img1gallerybox.jpg"
-						alt="Family Package Dish"
-					/>
-					<img src="./assets/images/gallery/img2gallerybox.jpg" alt="Pizza" />
-					<img
-						src="./assets/images/gallery/img3gallerybox.jpg"
-						alt="Meat Dish"
-					/>
-					<img
-						src="./assets/images/gallery/img4gallerybox.jpg"
-						alt="Spaghetti"
-					/>
-					<img src="./assets/images/gallery/img5gallerybox.jpg" alt="Steak" />
-					<img src="./assets/images/gallery/img6gallerybox.jpg" alt="Burger" />
-				</div>
-			</div>
-		</section>
+          <div class="about_content">
+            <h2 class="section-title">WHY CHOOSE US</h2>
+            <p>Best food for you and family</p>
+          </div>
+        </div>
+        <div class="about_image">
+          <img
+            src="./assets/images/about-us/img_aboutus_home1.jpg"
+            alt="Chef holding dish"
+          />
+          <div class="about_text">
+            <p>
+              Set in a sophisticated, smoke-free location, Kababi delivers
+              unforgettable culinary experiences with a wide variety of premium
+              dishes, made from fresh, local ingredients.
+            </p>
+            <button class="btn btn--gold">
+              <a href="#">Discover More</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- =================== MEET PROFESSIONAL CHEFS =================== -->
-		<section class="chefs">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">MEET PROFESSIONAL CHEFS</h2>
-					<p class="section-subtitle">Best foods for you & family</p>
-				</div>
-				<div class="chefs_flex">
-					<div class="chef-card">
-						<img src="./assets/images/team/img1team.jpg" alt="Chef 1" />
-					</div>
-					<div class="chef-card">
-						<img src="./assets/images/team/img2team.jpg" alt="Chef 2" />
-					</div>
-					<div class="chef-card">
-						<img src="./assets/images/team/img3team.jpg" alt="Chef 3" />
-					</div>
-					<div class="chef-card">
-						<img src="./assets/images/team/img4team.jpg" alt="Chef 4" />
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- =================== TRY OUR SPECIAL OFFER =================== -->
+    <section class="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">TRY OUR SPECIAL OFFER</h2>
+          <p class="section-subtitle">Best foods for you & family</p>
+        </div>
+        <div class="menu_list">
+          <div class="menu_item">
+            <h3>Raw Scallops from Erquy</h3>
+            <span class="price">$89</span>
+          </div>
+          <div class="menu_item">
+            <h3>Grilled King Crab</h3>
+            <span class="price">$89</span>
+          </div>
+          <div class="menu_item">
+            <h3>Coffee and Truffle Roast</h3>
+            <span class="price">$89</span>
+          </div>
+          <div class="menu_item">
+            <h3>Tender Octopus and Shrimp</h3>
+            <span class="price">$89</span>
+          </div>
+          <div class="menu_item">
+            <h3>Cod Fish Grilled and Oiled</h3>
+            <span class="price">$89</span>
+          </div>
+          <div class="menu_item">
+            <h3>French Duck Confit</h3>
+            <span class="price">$89</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- =================== LATEST NEWS & BLOG =================== -->
-		<section class="blog">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">LATEST NEWS & BLOG</h2>
-					<p class="section-subtitle">Best foods for you & family</p>
-				</div>
+    <!-- =================== RESTAURANT PHOTO GALLERY =================== -->
+    <section class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">RESTAURANT PHOTO GALLERY</h2>
+          <p class="section-subtitle">Nice looking & tasty</p>
+        </div>
+        <div class="gallery_flex">
+          <img
+            src="./assets/images/gallery/img1gallerybox.jpg"
+            alt="Family Package Dish"
+          />
+          <img src="./assets/images/gallery/img2gallerybox.jpg" alt="Pizza" />
+          <img
+            src="./assets/images/gallery/img3gallerybox.jpg"
+            alt="Meat Dish"
+          />
+          <img
+            src="./assets/images/gallery/img4gallerybox.jpg"
+            alt="Spaghetti"
+          />
+          <img src="./assets/images/gallery/img5gallerybox.jpg" alt="Steak" />
+          <img src="./assets/images/gallery/img6gallerybox.jpg" alt="Burger" />
+        </div>
+      </div>
+    </section>
 
-				<div class="blog_flex">
-					<!-- Blog Post 1 -->
-					<div class="blog_post">
-						<img
-							src="./assets/images/blog/img1blohhome01.jpg"
-							alt="Blog post 1"
-						/>
-						<p>
-							<span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
-							&nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
-							2021
-						</p>
-						<h3>How To Run A UX Audit For Major EdTech Platform Case Study</h3>
-						<button class="btn btn--small">
-							<a href="#">Read More</a>
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</div>
+    <!-- =================== MEET PROFESSIONAL CHEFS =================== -->
+    <section class="chefs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">MEET PROFESSIONAL CHEFS</h2>
+          <p class="section-subtitle">Best foods for you & family</p>
+        </div>
+        <div class="chefs_flex">
+          <div class="chef-card">
+            <img src="./assets/images/team/img1team.jpg" alt="Chef 1" />
+          </div>
+          <div class="chef-card">
+            <img src="./assets/images/team/img2team.jpg" alt="Chef 2" />
+          </div>
+          <div class="chef-card">
+            <img src="./assets/images/team/img3team.jpg" alt="Chef 3" />
+          </div>
+          <div class="chef-card">
+            <img src="./assets/images/team/img4team.jpg" alt="Chef 4" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<!-- Blog Post 2 -->
-					<div class="blog_post">
-						<img
-							src="./assets/images/blog/img2blohhome01.jpg"
-							alt="Blog post 2"
-						/>
-						<p>
-							<span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
-							&nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
-							2021
-						</p>
-						<h3>How To Run A UX Audit For Major EdTech Platform Case Study</h3>
-						<button class="btn btn--small">
-							<a href="#">Read More</a>
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</div>
+    <!-- =================== LATEST NEWS & BLOG =================== -->
+    <section class="blog">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">LATEST NEWS & BLOG</h2>
+          <p class="section-subtitle">Best foods for you & family</p>
+        </div>
 
-					<!-- Blog Post 3 -->
-					<div class="blog_post">
-						<img
-							src="./assets/images/blog/img3blohhome01.jpg"
-							alt="Blog post 3"
-						/>
-						<p>
-							<span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
-							&nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
-							2021
-						</p>
-						<h3>Designing With Code A Modern Approach To Development</h3>
-						<button class="btn btn--small">
-							<a href="#">
-								Read More <i class="fa-solid fa-arrow-right"></i>
-							</a>
-						</button>
-					</div>
-				</div>
+        <div class="blog_flex">
+          <!-- Blog Post 1 -->
+          <div class="blog_post">
+            <img
+              src="./assets/images/blog/img1blohhome01.jpg"
+              alt="Blog post 1"
+            />
+            <p>
+              <span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
+              &nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
+              2021
+            </p>
+            <h3>How To Run A UX Audit For Major EdTech Platform Case Study</h3>
+            <button class="btn btn--small">
+              <a href="#">Read More</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
-				<!-- Logos de marque -->
-				<div class="brand">
-					<img src="./assets/images/brand/imgbrand1.png" alt="brand 1" />
-					<img src="./assets/images/brand/imgbrand2.png" alt="brand 2" />
-					<img src="./assets/images/brand/imgbrand3.png" alt="brand 3" />
-					<img src="./assets/images/brand/imgbrand4.png" alt="brand 4" />
-					<img src="./assets/images/brand/imgbrand5.png" alt="brand 5" />
-					<img src="./assets/images/brand/imgbrand6.png" alt="brand 6" />
-				</div>
-			</div>
-		</section>
+          <!-- Blog Post 2 -->
+          <div class="blog_post">
+            <img
+              src="./assets/images/blog/img2blohhome01.jpg"
+              alt="Blog post 2"
+            />
+            <p>
+              <span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
+              &nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
+              2021
+            </p>
+            <h3>How To Run A UX Audit For Major EdTech Platform Case Study</h3>
+            <button class="btn btn--small">
+              <a href="#">Read More</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
 
-		<!-- =================== FOOTER =================== -->
-		<footer class="footer">
-			<!-- Brand -->
+          <!-- Blog Post 3 -->
+          <div class="blog_post">
+            <img
+              src="./assets/images/blog/img3blohhome01.jpg"
+              alt="Blog post 3"
+            />
+            <p>
+              <span style="color: #bfa27a">&#9679; BY WILLIAMSON</span>
+              &nbsp;&nbsp; <i class="fa-regular fa-calendar-days"></i> 25 AUG
+              2021
+            </p>
+            <h3>Designing With Code A Modern Approach To Development</h3>
+            <button class="btn btn--small">
+              <a href="#">
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
 
-			<div class="footer__brand">
-				<img src="./assets/images/logo/logo2.png" alt="Kababi logo" />
-			</div>
-			<div class="container footer__grid">
-				<!-- About -->
-				<div class="footer__section">
-					<h4>About</h4>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Our Story</a></li>
-						<li><a href="#">The Setting</a></li>
-						<li><a href="#">The Suites</a></li>
-						<li><a href="#">Food Lists</a></li>
-					</ul>
-				</div>
+        <!-- Logos de marque -->
+        <div class="brand">
+          <img src="./assets/images/brand/imgbrand1.png" alt="brand 1" />
+          <img src="./assets/images/brand/imgbrand2.png" alt="brand 2" />
+          <img src="./assets/images/brand/imgbrand3.png" alt="brand 3" />
+          <img src="./assets/images/brand/imgbrand4.png" alt="brand 4" />
+          <img src="./assets/images/brand/imgbrand5.png" alt="brand 5" />
+          <img src="./assets/images/brand/imgbrand6.png" alt="brand 6" />
+        </div>
+      </div>
+    </section>
 
-				<!-- Facilities -->
-				<div class="footer__section">
-					<h4>Facilities</h4>
-					<ul>
-						<li><a href="#">The Fontus Spa</a></li>
-						<li><a href="#">Experiences</a></li>
-						<li><a href="#">Private Functions</a></li>
-						<li><a href="#">Gallery, Events</a></li>
-						<li><a href="#">Special Offers</a></li>
-					</ul>
-				</div>
+    <!-- =================== FOOTER =================== -->
+    <footer class="footer">
+      <!-- Brand -->
 
-				<!-- Newsletter -->
-				<div class="footer__section">
-					<h4>Newsletters</h4>
-					<p>
-						Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-						incididunt labore et dolore
-					</p>
-					<form class="newsletter__form">
-						<input type="email" placeholder="Enter Email Address" />
-						<button type="submit">
-							<i class="fa-solid fa-arrow-right"></i>
-						</button>
-					</form>
-				</div>
+      <div class="footer__brand">
+        <img src="./assets/images/logo/logo2.png" alt="Kababi logo" />
+      </div>
+      <div class="container footer__grid">
+        <!-- About -->
+        <div class="footer__section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">The Setting</a></li>
+            <li><a href="#">The Suites</a></li>
+            <li><a href="#">Food Lists</a></li>
+          </ul>
+        </div>
 
-				<!-- Contact -->
-				<div class="footer__section">
-					<h4>Contact</h4>
-					<ul class="contact__info">
-						<li>
-							<i class="fa-solid fa-location-dot"></i>
-							56 Main Street, D-Block, 2nd Floor,<br />
-							Melbourne, Australia
-						</li>
-						<li>
-							<i class="fa-solid fa-envelope"></i>
-							support@gmail.com
-						</li>
-						<li>
-							<i class="fa-solid fa-phone"></i>
-							+012 (345) 67 899
-						</li>
-						<li>
-							<i class="fa-solid fa-clock"></i>
-							08 am - 06 pm
-						</li>
-					</ul>
-				</div>
-			</div>
+        <!-- Facilities -->
+        <div class="footer__section">
+          <h4>Facilities</h4>
+          <ul>
+            <li><a href="#">The Fontus Spa</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Private Functions</a></li>
+            <li><a href="#">Gallery, Events</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
 
-			<!-- Footer Bottom -->
-			<div class="footer__bottom">
-				<p>
-					Copyright © 2021 The Kababi - Restaurant HTML Template. Designed by
-					<a href="#">Themesflat</a>
-				</p>
-				<div class="social__icons">
-					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-					<a href="#"><i class="fa-brands fa-twitter"></i></a>
-					<a href="#"><i class="fa-brands fa-youtube"></i></a>
-					<a href="#"><i class="fa-brands fa-instagram"></i></a>
-				</div>
-			</div>
-		</footer>
-	</body>
+        <!-- Newsletter -->
+        <div class="footer__section">
+          <h4>Newsletters</h4>
+          <p>
+            Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+            incididunt labore et dolore
+          </p>
+          <form class="newsletter__form">
+            <input type="email" placeholder="Enter Email Address" />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__section">
+          <h4>Contact</h4>
+          <ul class="contact__info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              56 Main Street, D-Block, 2nd Floor,<br />
+              Melbourne, Australia
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              support@gmail.com
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              +012 (345) 67 899
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              08 am - 06 pm
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p>
+          Copyright © 2021 The Kababi - Restaurant HTML Template. Designed by
+          <a href="#">Themesflat</a>
+        </p>
+        <div class="social__icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

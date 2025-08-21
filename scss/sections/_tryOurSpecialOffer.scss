@@ -1,30 +1,57 @@
 .menu {
-	min-height: 100vh;
-	background-color: rgb(255, 252, 235);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.container {
-		gap: 100px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		.section-header {
-			text-align: center;
-		}
-		.menu_list {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 30px;
-			.menu_item {
-				min-width: 500px;
-				display: flex;
-				background-color: white;
-				height: 80px;
-				align-items: center;
-				justify-content: space-between;
-			}
-		}
-	}
+  min-height: 100vh;
+  background-color: rgb(255, 252, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .section-header {
+      text-align: center;
+    }
+
+    .menu_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      .menu_item {
+        min-width: 500px;
+        display: flex;
+        background-color: white;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  /* ✅ Tablette */
+  @media (max-width: 1024px) {
+    .container {
+      .menu_list {
+        .menu_item {
+          min-width: unset; // ❌ "none" n'existe pas
+          width: 400px;
+        }
+      }
+    }
+  }
+
+  /* ✅ Mobile */
+  @media (max-width: 768px) {
+    .container {
+      .menu_list {
+        .menu_item {
+          width: 300px; // encore plus petit sur mobile
+        }
+      }
+    }
+  }
 }

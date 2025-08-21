@@ -1,17 +1,31 @@
 .gallery {
-	min-height: 150vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.container {
-		.section-header {
-			text-align: center;
-		}
-		.gallery_flex {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 20px;
-		}
-	}
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    .section-header {
+      text-align: center;
+    }
+    .gallery_flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+/* ✅ Tablette */
+@media (max-width: 1024px) {
+  .gallery .gallery_flex img {
+    width: 220px; // un peu plus petit
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .gallery .gallery_flex img {
+    width: 100%; // prend toute la largeur
+    max-width: 320px; // limite pour éviter trop gros
+  }
 }
