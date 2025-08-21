@@ -581,7 +581,38 @@
 .gallery .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
+}
+.gallery .container .view-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  padding: 14px 26px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.gallery .container .view-more .arrow {
+  transition: transform 0.3s ease;
+  font-size: 14px;
+}
+.gallery .container .view-more:hover {
+  border-color: #c8a96a;
+  color: #c8a96a;
+}
+.gallery .container .view-more:hover .arrow {
+  transform: translateX(4px);
 }
 .gallery .container .section-header {
   text-align: center;
