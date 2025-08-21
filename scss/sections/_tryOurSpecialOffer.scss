@@ -4,12 +4,32 @@
   align-items: center;
   background-color: #faf6f0;
   padding: 80px 30px;
-
+  min-height: 100vh;
+  position: relative;
+  .img-absolute {
+    position: absolute;
+  }
+  .img-absolute-one {
+    left: 0;
+    bottom: -150px;
+    height: 700px;
+  }
+  .img-absolute-two {
+    right: 0;
+    top: 0;
+    height: 100vh;
+  }
+  @media (max-width: 1070px) {
+    .img-absolute {
+      display: none;
+    }
+  }
   .container {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
+
     .section-header {
       text-align: center;
     }
@@ -33,6 +53,7 @@
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
         position: relative;
         transition: all 0.3s ease;
+        padding: 20px 40px;
 
         h3 {
           margin: 0 0 6px 0;

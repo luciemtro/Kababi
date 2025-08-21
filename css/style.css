@@ -267,22 +267,22 @@
   background-color: white;
   font-size: 13px;
   cursor: pointer;
-  /* Ombre + transition douce */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  /* Hover + Active (même effet) */
 }
-.category .container .category_flex .category_item i {
+.category .container .category_flex .category_item i:first-of-type {
   font-size: 25px;
   color: #c8a96a;
   transition: color 0.3s ease;
 }
-.category .container .category_flex .category_item:hover {
+.category .container .category_flex .category_item:hover, .category .container .category_flex .category_item.active {
   color: white;
   background-color: #c8a96a;
-  transform: translateY(-5px); /* petit lift */
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.category .container .category_flex .category_item:hover i {
+.category .container .category_flex .category_item:hover i, .category .container .category_flex .category_item.active i {
   color: white;
 }
 
@@ -399,6 +399,26 @@
   align-items: center;
   background-color: #faf6f0;
   padding: 80px 30px;
+  min-height: 100vh;
+  position: relative;
+}
+.menu .img-absolute {
+  position: absolute;
+}
+.menu .img-absolute-one {
+  left: 0;
+  bottom: -150px;
+  height: 700px;
+}
+.menu .img-absolute-two {
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+@media (max-width: 1070px) {
+  .menu .img-absolute {
+    display: none;
+  }
 }
 .menu .container {
   display: flex;
@@ -429,6 +449,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   position: relative;
   transition: all 0.3s ease;
+  padding: 20px 40px;
   /* Hover + Active */
 }
 .menu .container .menu_list .menu_item h3 {

@@ -143,3 +143,17 @@ document.querySelectorAll(".menu_item").forEach((item) => {
     }
   });
 });
+
+document.querySelectorAll(".category_item").forEach((item) => {
+  item.addEventListener("click", () => {
+    // ✅ toggle unique : une seule active à la fois
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    } else {
+      document
+        .querySelectorAll(".category_item")
+        .forEach((el) => el.classList.remove("active"));
+      item.classList.add("active");
+    }
+  });
+});

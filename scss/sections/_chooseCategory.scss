@@ -32,20 +32,21 @@
         font-size: 13px;
         cursor: pointer;
 
-        /* Ombre + transition douce */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
 
-        i {
+        i:first-of-type {
           font-size: 25px;
           color: #c8a96a;
           transition: color 0.3s ease;
         }
 
-        &:hover {
+        /* Hover + Active (même effet) */
+        &:hover,
+        &.active {
           color: white;
           background-color: #c8a96a;
-          transform: translateY(-5px); /* petit lift */
+          transform: translateY(-5px);
           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
           i {
