@@ -753,9 +753,11 @@
   gap: 40px;
   margin-bottom: 60px;
 }
-.footer .footer__brand img {
-  width: 150px;
-  margin-bottom: 20px;
+.footer .footer__brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .footer .footer__section h4 {
   font-size: 1.1rem;
@@ -865,7 +867,7 @@
 }
 .footer .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 30px;
+  padding: 30px 60px 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -941,7 +943,7 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.blog .container .blog_flex .blog_post img {
+.blog .container .blog_flex .blog_post cu img {
   width: 100%;
   height: 220px;
   object-fit: cover;
