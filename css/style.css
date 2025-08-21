@@ -693,6 +693,7 @@
 }
 .footer .footer__brand img {
   width: 150px;
+  margin-bottom: 20px;
 }
 .footer .footer__section h4 {
   font-size: 1.1rem;
@@ -908,7 +909,7 @@
   margin: 0 0 18px;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.35;
   color: #1a1a1a;
 }
@@ -1048,6 +1049,14 @@ h3,
 .title {
   font-family: var(--font-title);
   font-weight: 700; /* 700 chargé */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 100 !important;
+  font-size: 35px;
+  letter-spacing: -1px;
+  color: rgb(22, 22, 22);
 }
 
 /*# sourceMappingURL=style.css.map */
