@@ -175,18 +175,31 @@
 
     .social__icons {
       margin-top: 15px;
-
+      display: flex;
+      gap: 10px;
       @media (min-width: 768px) {
         margin-top: 0;
       }
-
-      a {
-        color: #fff;
-        margin: 0 8px;
-        font-size: 1rem;
-
+      .social__item {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(56, 56, 56);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
         &:hover {
-          color: #bfa27a;
+          background-color: #bfa27a;
+          a {
+            color: white;
+          }
+        }
+        a {
+          color: #a5a4a4;
+          margin: 0 8px;
+          font-size: 1rem;
         }
       }
     }
