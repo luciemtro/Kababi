@@ -8,6 +8,9 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .section-header {
       text-align: center;
@@ -17,12 +20,15 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       gap: 30px;
+      width: 100%;
 
-      /* ---- STYLE UNIQUEMENT DES CARDS ---- */
+      /* ---- STYLE DES CARDS ---- */
       .blog_post {
-        width: 300px; /* largeur desktop */
+        flex: 0 1 340px; /* wrap propre */
+        max-width: 360px;
+        width: auto;
         background-color: #faf6f0;
         box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -35,7 +41,6 @@
           transition: transform 0.4s ease;
         }
 
-        /* padding uniquement sur le contenu */
         p,
         h3,
         .btn.btn--small {
@@ -43,7 +48,6 @@
           padding-right: 24px;
         }
 
-        /* meta */
         p {
           margin: 18px 0 6px;
           font-size: 12px;
@@ -59,7 +63,6 @@
           }
         }
 
-        /* titre */
         h3 {
           margin: 0 0 18px;
           font-family: "Playfair Display", serif;
@@ -69,7 +72,6 @@
           color: #1a1a1a;
         }
 
-        /* bouton (scopé) */
         .btn.btn--small {
           margin: 10px 0 40px 40px;
           display: inline-flex;
@@ -86,9 +88,17 @@
           border: 0;
           cursor: pointer;
           transition: background-color 0.2s ease, transform 0.2s ease;
+
           &:hover {
+            background-color: #c8a96a;
             color: white;
+            transform: translateY(-2px);
+
+            a {
+              color: white;
+            }
           }
+
           a {
             color: black;
             text-decoration: none;
@@ -96,21 +106,12 @@
           i {
             font-size: 12px;
           }
-
-          &:hover {
-            background-color: #c8a96a;
-            color: white;
-            transform: translateY(-2px);
-            a {
-              color: white;
-            }
-          }
         }
 
-        /* hover card */
         &:hover {
           transform: translateY(-6px);
           box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+
           img {
             transform: scale(1.03);
           }
@@ -129,40 +130,28 @@
 
 /* Tablette */
 @media (max-width: 1024px) {
-  .blog {
-    padding: 80px 30px;
+  .blog .blog_post {
+    flex: 0 1 45%;
+    max-width: 500px;
 
-    .container {
-      .blog_flex {
-        .blog_post {
-          width: 320px;
-
-          img {
-            height: 200px;
-          }
-        }
-      }
+    img {
+      height: 200px;
     }
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .blog {
-    .container {
-      .blog_flex {
-        .blog_post {
-          width: 100%;
-          max-width: 420px;
+  .blog .blog_post {
+    flex: 0 1 100%;
+    max-width: 520px;
 
-          img {
-            height: 220px;
-          }
-        }
-      }
+    img {
+      height: 220px;
     }
   }
 }
+
 .brand-carousel {
   overflow: hidden;
   width: 100%;
