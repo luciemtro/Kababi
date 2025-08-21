@@ -97,8 +97,7 @@
     transition: color 0.25s ease, transform 0.2s ease;
 
     /* doré au hover/focus */
-    &:hover,
-    &:focus {
+    &:hover {
       color: #c8a96a;
       transform: scale(1.05);
     }

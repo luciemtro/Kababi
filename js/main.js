@@ -1,3 +1,4 @@
+//Burger menu navbar
 const toggle = document.querySelector(".navbar_toggle");
 const menu = document.querySelector(".navbar_menu");
 const icon = toggle.querySelector("i");
@@ -15,6 +16,7 @@ toggle.addEventListener("click", () => {
   }
 });
 
+//CARROUSSEL section latest
 (function () {
   const viewport = document.querySelector(".brand-carousel");
   const track = document.querySelector(".brand-track");
@@ -48,7 +50,7 @@ toggle.addEventListener("click", () => {
 
   let x = 0,
     rafId;
-  const baseSpeed = 0.6; // px/frame (ajuste si tu veux)
+  const baseSpeed = 0.6; // px/frame
 
   async function build() {
     // Remet une seule série
@@ -104,7 +106,7 @@ toggle.addEventListener("click", () => {
     start();
   })();
 
-  // Optionnel : pause au survol
+  // pause au survol
   viewport.addEventListener("mouseenter", stop);
   viewport.addEventListener("mouseleave", start);
 

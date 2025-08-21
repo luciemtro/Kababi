@@ -93,7 +93,7 @@
     transition: color 0.25s ease, transform 0.2s ease;
     /* doré au hover/focus */
   }
-  .navbar_toggle:hover, .navbar_toggle:focus {
+  .navbar_toggle:hover {
     color: #c8a96a;
     transform: scale(1.05);
   }
@@ -777,6 +777,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px 30px;
 }
 .blog .container {
   display: flex;
@@ -920,6 +921,7 @@
 }
 
 .brand-track img {
+  cursor: pointer;
   height: 100px;
   width: auto;
   filter: grayscale(100%);

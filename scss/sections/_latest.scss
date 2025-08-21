@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 80px 30px;
   .container {
     display: flex;
     flex-direction: column;
@@ -166,6 +166,7 @@
 }
 
 .brand-track img {
+  cursor: pointer;
   height: 100px;
   width: auto;
   filter: grayscale(100%);
