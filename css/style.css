@@ -580,8 +580,6 @@
 }
 .gallery .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 50px;
 }
@@ -594,13 +592,86 @@
   justify-content: center;
   gap: 20px;
 }
+.gallery .container .gallery_flex .gallery_item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery .container .gallery_flex .gallery_item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.gallery .container .gallery_flex .gallery_item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+}
+.gallery .container .gallery_flex .gallery_item .overlay h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.gallery .container .gallery_flex .gallery_item .overlay p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 13%;
+}
+.gallery .container .gallery_flex .gallery_item .overlay .arrow {
+  margin-top: 15px;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.gallery .container .gallery_flex .gallery_item:hover img {
+  transform: scale(1.1);
+}
+.gallery .container .gallery_flex .gallery_item:hover .overlay {
+  opacity: 1;
+}
+.gallery .container .gallery_flex .gallery_item:hover .arrow {
+  transform: translateX(6px);
+}
 
+/* Mobile responsive */
 @media (max-width: 764px) {
   .gallery {
     padding: 80px 30px;
   }
-  .gallery_flex img {
-    width: 90%;
+  .gallery_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery_flex .gallery_item img {
+    width: 100%; /* prend toute la largeur en mobile */
+    height: auto;
+  }
+}
+/* ✅ Mobile/tactile : overlay au tap (appui) et au focus */
+@media (hover: none) {
+  .gallery .gallery_flex .gallery_item {
+    /* évite le halo bleu sur mobile quand on garde le focus */
+    outline: none;
+  }
+  .gallery .gallery_flex .gallery_item:active .overlay, .gallery .gallery_flex .gallery_item:focus-within .overlay {
+    opacity: 1;
+  }
+  .gallery .gallery_flex .gallery_item:active img, .gallery .gallery_flex .gallery_item:focus-within img {
+    transform: scale(1.1);
+  }
+  .gallery .gallery_flex .gallery_item:active .arrow, .gallery .gallery_flex .gallery_item:focus-within .arrow {
+    transform: translateX(6px);
   }
 }
 .footer {
