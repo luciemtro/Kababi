@@ -32,7 +32,7 @@
         font-size: 13px;
         cursor: pointer;
 
-        /* ✅ Ombre + transition douce */
+        /* Ombre + transition douce */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
 
@@ -57,7 +57,7 @@
   }
 }
 
-/* ✅ Tablette */
+/* Tablette */
 @media (max-width: 1024px) {
   .category {
     padding: 80px 30px;

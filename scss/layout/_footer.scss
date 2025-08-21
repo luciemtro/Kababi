@@ -87,7 +87,7 @@
       }
     }
 
-    /* ✅ Large écrans réduits (≤ 1350px) */
+    /* Large écrans réduits (≤ 1350px) */
     @media (max-width: 1350px) {
       max-width: 250px;
 
@@ -101,7 +101,7 @@
       }
     }
 
-    /* ✅ Tablette (≤ 1024px) */
+    /* Tablette (≤ 1024px) */
     @media (max-width: 1024px) {
       max-width: 180px;
 
@@ -115,10 +115,9 @@
       }
     }
 
-    /* ✅ Mobile (≤ 768px) */
+    /* Mobile (≤ 768px) */
     @media (max-width: 768px) {
       max-width: 100%;
-      /* ❌ supprimé flex-direction: column */
       input {
         font-size: 0.85rem;
         padding: 10px 12px;

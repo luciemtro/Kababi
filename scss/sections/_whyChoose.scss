@@ -5,6 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .imgfood {
@@ -56,7 +63,7 @@
   text-align: center;
 }
 
-/* ✅ Tablette */
+/* Tablette */
 @media (max-width: 1024px) {
   .about {
     min-height: 100vh;
@@ -77,7 +84,7 @@
   }
 }
 
-/* ✅ Mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .about {
     padding: 80px 30px;

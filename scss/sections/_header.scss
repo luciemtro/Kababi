@@ -7,7 +7,7 @@
   color: white;
   position: relative;
   display: flex;
-  align-items: flex-end; // ✅ corrigé "end"
+  align-items: flex-end;
   padding-left: 200px;
 
   .fa-play {
@@ -74,7 +74,7 @@
   }
 }
 
-/* ✅ Tablette */
+/* Tablette */
 @media (max-width: 1024px) {
   .hero {
     padding-left: 100px;
@@ -85,23 +85,23 @@
     }
 
     .hero_text {
-      height: 400px;
+      height: 600px;
       .hero_title {
-        font-size: 3.5rem; // titre tablette
+        font-size: 5rem;
         letter-spacing: -2px;
       }
     }
   }
 }
 
-/* ✅ Mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .hero {
-    padding-left: 20px;
+    padding-left: 40px;
 
     .hero_text {
       .hero_title {
-        font-size: 3.5rem; // titre mobile
+        font-size: 3.5rem;
         letter-spacing: -1px;
       }
     }

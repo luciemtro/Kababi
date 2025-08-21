@@ -4,6 +4,11 @@
   align-items: center;
 
   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
     .section-header {
       text-align: center;
     }
@@ -12,7 +17,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* ✅ Ajoute un espace entre les cartes */
+      gap: 20px; /* 
 
       /* ====== CARD ====== */
       .menu_item {
@@ -56,8 +61,9 @@
           transition: color 0.3s ease;
         }
 
-        /* ✅ Hover : cadre pointillé + effet léger */
-        &:hover::after {
+        /* cadre pointillé + effet léger */
+        &:hover::after,
+        &.active::after {
           content: "";
           position: absolute;
           inset: 8px;
@@ -65,11 +71,12 @@
           border: 2px dashed #d6b87a;
           pointer-events: none;
         }
-        &:hover {
+
+        &:hover,
+        &.active {
           transform: translateY(-3px);
         }
       }
-
       /* ====== Responsive ====== */
       @media (max-width: 1200px) {
         flex-direction: column;
@@ -118,7 +125,7 @@
 
       @media (max-width: 400px) {
         .menu_item {
-          width: 250px;
+          width: 290px;
           padding: 12px 16px;
 
           h3 {
