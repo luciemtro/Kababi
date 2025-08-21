@@ -127,3 +127,19 @@ toggle.addEventListener("click", () => {
     else start();
   });
 })();
+
+//active
+document.querySelectorAll(".menu_item").forEach((item) => {
+  item.addEventListener("click", () => {
+    // ✅ Toggle : si déjà active, on enlève
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    } else {
+      // sinon on enlève active des autres et on active celle-ci
+      document
+        .querySelectorAll(".menu_item")
+        .forEach((el) => el.classList.remove("active"));
+      item.classList.add("active");
+    }
+  });
+});

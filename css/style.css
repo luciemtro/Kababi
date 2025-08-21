@@ -402,10 +402,9 @@
 }
 .menu .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 50px;
+  align-items: center;
 }
 .menu .container .section-header {
   text-align: center;
@@ -414,9 +413,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* 
-
-/* ====== CARD ====== */
+  gap: 20px;
   /* ====== Responsive ====== */
 }
 .menu .container .menu_list .menu_item {
@@ -432,9 +429,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   position: relative;
   transition: all 0.3s ease;
-  /* Texte gauche */
-  /* Prix droite */
-  /* cadre pointillé + effet léger */
+  /* Hover + Active */
 }
 .menu .container .menu_list .menu_item h3 {
   margin: 0 0 6px 0;
@@ -459,6 +454,9 @@
   color: #c8a96a;
   transition: color 0.3s ease;
 }
+.menu .container .menu_list .menu_item:hover, .menu .container .menu_list .menu_item.active {
+  transform: translateY(-3px);
+}
 .menu .container .menu_list .menu_item:hover::after, .menu .container .menu_list .menu_item.active::after {
   content: "";
   position: absolute;
@@ -466,9 +464,6 @@
   border-radius: 10px;
   border: 2px dashed #d6b87a;
   pointer-events: none;
-}
-.menu .container .menu_list .menu_item:hover, .menu .container .menu_list .menu_item.active {
-  transform: translateY(-3px);
 }
 @media (max-width: 1200px) {
   .menu .container .menu_list {
@@ -526,6 +521,21 @@
   }
 }
 
+/* ✅ Mobile / tactile : activer au tap */
+@media (hover: none) {
+  .menu_item:active,
+  .menu_item.active {
+    transform: translateY(-3px);
+  }
+  .menu_item:active::after,
+  .menu_item.active::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 10px;
+    border: 2px dashed #d6b87a;
+  }
+}
 .chefs {
   min-height: 100vh;
   display: flex;

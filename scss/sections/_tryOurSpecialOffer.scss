@@ -4,12 +4,12 @@
   align-items: center;
   background-color: #faf6f0;
   padding: 80px 30px;
+
   .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
     .section-header {
       text-align: center;
     }
@@ -18,9 +18,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* 
+      gap: 20px;
 
-      /* ====== CARD ====== */
       .menu_item {
         cursor: pointer;
         width: 700px;
@@ -35,7 +34,6 @@
         position: relative;
         transition: all 0.3s ease;
 
-        /* Texte gauche */
         h3 {
           margin: 0 0 6px 0;
           font-family: "Playfair Display", serif;
@@ -44,6 +42,7 @@
           line-height: 1.25;
           color: #1a1a1a;
         }
+
         p {
           margin: 0;
           font-size: 13px;
@@ -51,7 +50,6 @@
           color: #7a7a7a;
         }
 
-        /* Prix droite */
         .price {
           margin-left: 24px;
           white-space: nowrap;
@@ -62,7 +60,12 @@
           transition: color 0.3s ease;
         }
 
-        /* cadre pointillé + effet léger */
+        /* Hover + Active */
+        &:hover,
+        &.active {
+          transform: translateY(-3px);
+        }
+
         &:hover::after,
         &.active::after {
           content: "";
@@ -72,12 +75,8 @@
           border: 2px dashed #d6b87a;
           pointer-events: none;
         }
-
-        &:hover,
-        &.active {
-          transform: translateY(-3px);
-        }
       }
+
       /* ====== Responsive ====== */
       @media (max-width: 1200px) {
         flex-direction: column;
@@ -140,6 +139,22 @@
           }
         }
       }
+    }
+  }
+}
+
+/* ✅ Mobile / tactile : activer au tap */
+@media (hover: none) {
+  .menu_item:active,
+  .menu_item.active {
+    transform: translateY(-3px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border-radius: 10px;
+      border: 2px dashed #d6b87a;
     }
   }
 }
