@@ -60,7 +60,7 @@
 @media (max-width: 1024px) {
   .about {
     min-height: 100vh;
-    padding-top: 0;
+    padding: 80px 0;
   }
   .imgfood {
     display: none;
@@ -80,7 +80,7 @@
 /* ✅ Mobile */
 @media (max-width: 768px) {
   .about {
-    padding-top: 0;
+    padding: 80px 30px;
   }
   .imgfood {
     display: none;

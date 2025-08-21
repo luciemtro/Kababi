@@ -1,16 +1,9 @@
 .menu {
-  min-height: 100vh;
-  background-color: rgb(255, 252, 235);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .container {
-    gap: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
     .section-header {
       text-align: center;
     }
@@ -19,37 +12,124 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 20px; /* ✅ Ajoute un espace entre les cartes */
 
+      /* ====== CARD ====== */
       .menu_item {
-        min-width: 500px;
+        cursor: pointer;
+        width: 700px;
         display: flex;
-        background-color: white;
-        height: 80px;
         align-items: center;
         justify-content: space-between;
-      }
-    }
-  }
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 16px 24px;
+        min-height: 80px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        position: relative;
+        transition: all 0.3s ease;
 
-  /* ✅ Tablette */
-  @media (max-width: 1024px) {
-    .container {
-      .menu_list {
-        .menu_item {
-          min-width: unset; // ❌ "none" n'existe pas
-          width: 400px;
+        /* Texte gauche */
+        h3 {
+          margin: 0 0 6px 0;
+          font-family: "Playfair Display", serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 1.25;
+          color: #1a1a1a;
+        }
+        p {
+          margin: 0;
+          font-size: 13px;
+          line-height: 1.4;
+          color: #7a7a7a;
+        }
+
+        /* Prix droite */
+        .price {
+          margin-left: 24px;
+          white-space: nowrap;
+          font-family: "Playfair Display", serif;
+          font-weight: 400;
+          font-size: 34px;
+          color: #c8a96a;
+          transition: color 0.3s ease;
+        }
+
+        /* ✅ Hover : cadre pointillé + effet léger */
+        &:hover::after {
+          content: "";
+          position: absolute;
+          inset: 8px;
+          border-radius: 10px;
+          border: 2px dashed #d6b87a;
+          pointer-events: none;
+        }
+        &:hover {
+          transform: translateY(-3px);
         }
       }
-    }
-  }
 
-  /* ✅ Mobile */
-  @media (max-width: 768px) {
-    .container {
-      .menu_list {
+      /* ====== Responsive ====== */
+      @media (max-width: 1200px) {
+        flex-direction: column;
+
         .menu_item {
-          width: 300px; // encore plus petit sur mobile
+          width: 600px;
+
+          h3 {
+            font-size: 19px;
+          }
+          .price {
+            font-size: 32px;
+          }
+        }
+      }
+
+      @media (max-width: 700px) {
+        .menu_item {
+          width: 500px;
+
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 12.5px;
+          }
+          .price {
+            font-size: 30px;
+          }
+        }
+      }
+
+      @media (max-width: 550px) {
+        .menu_item {
+          width: 350px;
+          padding: 14px 18px;
+
+          h3 {
+            font-size: 17px;
+          }
+          .price {
+            font-size: 28px;
+          }
+        }
+      }
+
+      @media (max-width: 400px) {
+        .menu_item {
+          width: 250px;
+          padding: 12px 16px;
+
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+          .price {
+            font-size: 26px;
+          }
         }
       }
     }

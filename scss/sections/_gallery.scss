@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px 30px;
   .container {
     .section-header {
       text-align: center;
@@ -15,17 +16,14 @@
     }
   }
 }
-/* ✅ Tablette */
-@media (max-width: 1024px) {
-  .gallery .gallery_flex img {
-    width: 220px; // un peu plus petit
+
+@media (max-width: 764px) {
+  .gallery_flex img {
+    width: 70%; // un peu plus petit
   }
 }
-
-/* ✅ Mobile */
-@media (max-width: 768px) {
-  .gallery .gallery_flex img {
-    width: 100%; // prend toute la largeur
-    max-width: 320px; // limite pour éviter trop gros
+@media (max-width: 400px) {
+  .gallery_flex img {
+    width: 180px; // un peu plus petit
   }
 }

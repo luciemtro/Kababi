@@ -86,55 +86,74 @@
   display: none;
 }
 
-/* ============= Responsive ============= */
 @media (max-width: 1024px) {
-  .navbar {
-    .container {
-      margin: 0 20px;
+  /* Bouton burger (icône) */
+  .navbar_toggle {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    z-index: 1001;
+    transition: color 0.25s ease, transform 0.2s ease;
+
+    /* doré au hover/focus */
+    &:hover,
+    &:focus {
+      color: #c8a96a;
+      transform: scale(1.05);
     }
   }
 
-  /* Menu mobile = prend tout le top */
+  /* Menu mobile : recouvre l'écran et s'anime en douceur */
   .navbar_menu {
-    display: none;
+    /* layout */
+    display: flex;
     flex-direction: column;
     gap: 20px;
 
-    position: fixed; /* ✅ recouvre tout l’écran */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
+    /* placement plein écran */
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
     background: rgba(0, 0, 0, 0.95);
-    padding: 100px 20px 20px; /* espace en haut avant les liens */
+
+    /* 👉 padding avec PLUS d'espace à gauche */
+    /*            top   right  bottom left  */
+    padding: 100px 20px 40px 48px;
+
     z-index: 999;
+
+    /* état FERMÉ (mais gardé au DOM pour pouvoir animer) */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-12px);
+    pointer-events: none;
+
+    /* transition douce ouverture/fermeture */
+    transition: opacity 0.28s ease, transform 0.28s ease,
+      visibility 0s linear 0.28s;
   }
 
+  /* état OUVERT */
   .navbar_menu.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s;
   }
 
+  /* CTA dans le menu mobile */
   .navbar_cta {
-    display: block; /* bouton "book" visible dans le menu mobile */
-  }
-
-  .navbar_btn-desktop {
-    display: none; /* bouton desktop caché en mobile */
-  }
-
-  .navbar_toggle {
     display: block;
-    position: fixed; /* ✅ reste fixé même quand le menu s’ouvre */
-    top: 25px;
-    right: 35px;
   }
-
-  /* Icône burger → croix quand actif */
-  .navbar_toggle.open .fa-bars {
+  .navbar_btn-desktop {
     display: none;
   }
 
+  /* Icône burger → croix quand actif (ton JS gère la classe) */
+  .navbar_toggle.open .fa-bars {
+    display: none;
+  }
   .navbar_toggle.open .fa-xmark {
     display: inline-block;
   }

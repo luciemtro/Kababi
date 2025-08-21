@@ -1,37 +1,66 @@
 .category {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 100px;
-	text-align: center;
-	background-image: linear-gradient(rgba(245, 245, 220, 0.475)),
-		url('../../assets/images/banner/imgbgcategory.jpg');
-	background-size: cover;
-	.container {
-		display: flex;
-		flex-direction: column;
-		gap: 60px;
-		.category_flex {
-			display: flex;
-			justify-content: center;
-			gap: 30px;
-			flex-wrap: wrap;
-			.category_item {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+  background-image: linear-gradient(rgba(245, 245, 220, 0.475)),
+    url("../../assets/images/banner/imgbgcategory.jpg");
+  background-size: cover;
 
-				gap: 20px;
-				width: 120px;
-				height: 150px;
-				background-color: white;
-				i {
-					font-size: 40px;
-					color: rgb(175, 151, 95);
-				}
-			}
-		}
-	}
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .category_flex {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .category_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 120px;
+        height: 150px;
+        background-color: white;
+        font-size: 13px;
+        cursor: pointer;
+
+        /* ✅ Ombre + transition douce */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+
+        i {
+          font-size: 25px;
+          color: #c8a96a;
+          transition: color 0.3s ease;
+        }
+
+        &:hover {
+          color: white;
+          background-color: #c8a96a;
+          transform: translateY(-5px); /* petit lift */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ✅ Tablette */
+@media (max-width: 1024px) {
+  .category {
+    padding: 80px 30px;
+    justify-content: center;
+  }
 }
