@@ -47,3 +47,35 @@ h2 {
   letter-spacing: -1px;
   color: rgb(22, 22, 22);
 }
+section {
+  position: relative;
+}
+.word-behind {
+  font-family: var(--font-title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 17rem;
+  color: #f5eee3;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.about-us {
+  top: 350px !important;
+}
+.container {
+  z-index: 2;
+}
+@media (max-width: 1026px) {
+  .word-behind {
+    font-size: 10rem;
+  }
+  .about-us {
+    top: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .word-behind {
+    display: none;
+  }
+}
