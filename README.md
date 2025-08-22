@@ -19,7 +19,7 @@ Cette maquette de restaurant moderne a été reproduite en **HTML** et **Sass** 
 - HTML5 sémantique
 - Sass (SCSS)
 - Responsive design (Flexbox / Grid)
-
+- Léger JS
 ---
 
 ## 🔗 Démo en ligne
