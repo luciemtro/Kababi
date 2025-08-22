@@ -33,9 +33,7 @@
     color: white;
     transition: color 0.2s ease-in-out;
     font-weight: 200;
-    &:hover,
-    &:active,
-    &:focus {
+    &:hover {
       color: #c8a96a;
     }
   }
@@ -44,13 +42,31 @@
     font-size: 12px;
   }
 }
-.cta-desktop {
+
+/* Bouton doré */
+.btn--gold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #c8a96a;
+  border-radius: 5px;
+  padding: 15px 35px;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
   display: flex;
+  gap: 10px;
   align-items: center;
-  gap: 50px;
-  span {
+  cursor: pointer;
+
+  a {
     color: white;
-    font-weight: 200;
+  }
+
+  &:hover {
+    background-color: #8a764f;
   }
 }
 
@@ -135,31 +151,5 @@
   }
   .navbar_toggle.open .fa-xmark {
     display: inline-block;
-  }
-}
-/* Bouton doré */
-.btn--gold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 2px;
-  background-color: #c8a96a;
-  border-radius: 5px;
-  padding: 15px 35px;
-  width: fit-content;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  cursor: pointer;
-
-  a {
-    color: white;
-  }
-
-  &:hover {
-    background-color: #8a764f;
   }
 }
