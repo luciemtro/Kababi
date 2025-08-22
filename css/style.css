@@ -46,34 +46,10 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  /* Bouton doré */
 }
 .cta-desktop span {
   color: white;
   font-weight: 200;
-}
-.cta-desktop .btn--gold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 2px;
-  background-color: #c8a96a;
-  border-radius: 5px;
-  padding: 15px 35px;
-  width: fit-content;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  cursor: pointer;
-}
-.cta-desktop .btn--gold a {
-  color: white;
-}
-.cta-desktop .btn--gold:hover {
-  background-color: #8a764f;
 }
 
 /* Toggle */
@@ -150,6 +126,31 @@
     display: inline-block;
   }
 }
+/* Bouton doré */
+.btn--gold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #c8a96a;
+  border-radius: 5px;
+  padding: 15px 35px;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.btn--gold a {
+  color: white;
+}
+.btn--gold:hover {
+  background-color: #8a764f;
+}
+
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.76) 40%, transparent), url("../../assets/images/slider/img_bg_slider_home01.jpg");
