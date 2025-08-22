@@ -32,8 +32,10 @@
   a {
     color: white;
     transition: color 0.2s ease-in-out;
-
-    &:hover {
+    font-weight: 200;
+    &:hover,
+    &:active,
+    &:focus {
       color: #c8a96a;
     }
   }
@@ -42,31 +44,39 @@
     font-size: 12px;
   }
 }
-
-/* Bouton doré */
-.btn--gold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 2px;
-  background-color: #c8a96a;
-  border-radius: 5px;
-  padding: 15px 35px;
-  width: fit-content;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out;
+.cta-desktop {
   display: flex;
-  gap: 10px;
   align-items: center;
-  cursor: pointer;
-
-  a {
+  gap: 50px;
+  span {
     color: white;
+    font-weight: 200;
   }
+  /* Bouton doré */
+  .btn--gold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background-color: #c8a96a;
+    border-radius: 5px;
+    padding: 15px 35px;
+    width: fit-content;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
 
-  &:hover {
-    background-color: #8a764f;
+    a {
+      color: white;
+    }
+
+    &:hover {
+      background-color: #8a764f;
+    }
   }
 }
 

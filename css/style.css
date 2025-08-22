@@ -33,16 +33,26 @@
 .navbar_menu a {
   color: white;
   transition: color 0.2s ease-in-out;
+  font-weight: 200;
 }
-.navbar_menu a:hover {
+.navbar_menu a:hover, .navbar_menu a:active, .navbar_menu a:focus {
   color: #c8a96a;
 }
 .navbar_menu i {
   font-size: 12px;
 }
 
-/* Bouton doré */
-.btn--gold {
+.cta-desktop {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  /* Bouton doré */
+}
+.cta-desktop span {
+  color: white;
+  font-weight: 200;
+}
+.cta-desktop .btn--gold {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: white;
@@ -59,10 +69,10 @@
   align-items: center;
   cursor: pointer;
 }
-.btn--gold a {
+.cta-desktop .btn--gold a {
   color: white;
 }
-.btn--gold:hover {
+.cta-desktop .btn--gold:hover {
   background-color: #8a764f;
 }
 
